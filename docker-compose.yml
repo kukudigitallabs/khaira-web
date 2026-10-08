@@ -1,0 +1,47 @@
+services:
+  # MySQL Database Container
+  db:
+    image: mysql:8.0
+    container_name: khaira_mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: khaira_db
+    ports:
+      - "33061:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Node.js Web Application & REST API Server Container
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: khaira_web_app
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    environment:
+      PORT: 3000
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: khaira_db
+      SITE_PASSWORD: Kuku@007
+      ADMIN_USER: admin
+      ADMIN_PASS: Khaira@2027#
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  mysql_data:

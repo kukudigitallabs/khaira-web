@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Sardar Sukhpal Singh Khaira | MLA Bholath | Mission 2027 Punjab</title>
+  <meta name="description" content="Official website of Sardar Sukhpal Singh Khaira, Member of the Punjab Legislative Assembly (MLA Bholath) - Indian National Congress. Voice of Punjab, Mission 2027.">
+  <meta name="keywords" content="Sukhpal Singh Khaira, Sukhpal Khaira, MLA Bholath, Congress Punjab, Mission 2027 Punjab, Punjab Legislative Assembly, Bholath Constituency">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.facebook.com/SukhpalKhairaINC">
+  <meta property="og:title" content="Sardar Sukhpal Singh Khaira | Official Website & Mission 2027">
+  <meta property="og:description" content="Follow Sardar Sukhpal Singh Khaira, MLA Bholath. Voice of Punjab, farmer rights, clean governance & Mission 2027.">
+  <meta property="og:image" content="banner.jpeg">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+     WELCOME GATE / WEBSITE PASSWORD PROTECTION OVERLAY
+     ========================================================================== -->
+  <div id="welcomeGateOverlay" class="welcome-gate-wrapper" style="display:none;">
+    <div class="welcome-gate-card">
+      <div class="welcome-header-stamp">
+        <i class="fa-solid fa-lock"></i> Official Web Portal • Office of Sardar Sukhpal Singh Khaira
+      </div>
+      
+      <div style="margin: 20px 0;">
+        <img src="banner.jpeg" alt="Sukhpal Singh Khaira" style="width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid var(--saffron-orange);box-shadow:0 8px 24px rgba(0,0,0,0.5);">
+        <h2 style="font-size:1.35rem;font-weight:900;margin-top:10px;margin-bottom:4px;color:#ffffff;">Sardar Sukhpal Singh Khaira</h2>
+        <p style="font-size:0.85rem;color:#94a3b8;margin:0;">MLA Bholath • Mission 2027 Punjab</p>
+      </div>
+
+      <div class="password-gate-form active" style="display:block;opacity:1;transform:none;background:rgba(0,0,0,0.4);padding:18px;border-radius:12px;border:1px solid rgba(255,107,0,0.4);">
+        <label for="gatePassInput" style="display:block;font-size:0.85rem;font-weight:700;color:#cbd5e1;margin-bottom:10px;text-align:left;">
+          <i class="fa-solid fa-key" style="color:var(--saffron-orange);"></i> Enter Site Access Password to Open Website:
+        </label>
+        <form id="welcomeGateForm">
+          <div class="password-input-wrapper" style="position:relative;margin-bottom:10px;">
+            <input type="password" id="gatePassInput" class="gate-password-input" placeholder="Enter access password..." required style="width:100%;min-height:48px;padding:12px 44px 12px 14px;border-radius:var(--radius-md);border:1.5px solid rgba(255,255,255,0.25);background:rgba(15,23,42,0.8);color:#ffffff;font-size:1rem;outline:none;">
+            <button type="button" id="toggleGatePassVisibility" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:#cbd5e1;cursor:pointer;padding:8px;font-size:1.05rem;">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+          <div id="gateErrorMsg" class="gate-error-msg" style="min-height:22px;color:#ef4444;font-size:0.825rem;font-weight:700;margin-bottom:10px;"></div>
+          <button type="submit" class="btn-primary-saffron btn-unlock-site" style="width:100%;min-height:48px;font-size:1rem;font-weight:800;border-radius:var(--radius-md);box-shadow:0 8px 24px rgba(255,107,0,0.4);cursor:pointer;">
+            <i class="fa-solid fa-lock-open"></i> Unlock & Open Website
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+     MAIN WEBSITE CONTENT
+     ========================================================================== -->
+  <div id="siteContent">
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+      <div class="container">
+        <div class="ticker-content">
+          <span class="badge-tag" data-i18n="heroBadge">MISSION 2027</span>
+          <span id="tickerText">🚩 <strong>ਮਿਸ਼ਨ 2027</strong> — ਲੋਕਾਂ ਦੀ ਆਵਾਜ਼, ਪੰਜਾਬ ਦੀ ਤਰੱਕੀ! Join Sardar Sukhpal Singh Khaira.</span>
+        </div>
+        <div class="top-contact-links">
+          <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" aria-label="Official Facebook">
+            <i class="fa-brands fa-facebook"></i> Facebook Page
+          </a>
+          <a href="mailto:sukhpalkhaira@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header (Perfect Responsive Multi-Device Header) -->
+    <header class="main-header">
+      <div class="container header-wrapper">
+        <!-- Brand Identity -->
+        <a href="#home" class="brand-identity" aria-label="Home">
+          <img src="/congress-logo.png" alt="Indian National Congress Hand Symbol" class="congress-hand-logo">
+          <div class="brand-title">
+            <span class="brand-name" data-i18n="heroTitle">Sukhpal Singh Khaira</span>
+            <span class="brand-sub" data-i18n="heroSubtitle">MLA Bholath • Congress</span>
+          </div>
+        </a>
+
+        <!-- Desktop & Mobile Nav Menu Drawer -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu" id="mainNavMenu">
+            <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house nav-icon"></i> Home</a></li>
+            <li><a href="#about" class="nav-link"><i class="fa-solid fa-user nav-icon"></i> About Leader</a></li>
+            <li><a href="#pillars" class="nav-link"><i class="fa-solid fa-flag nav-icon"></i> Mission 2027</a></li>
+            <li><a href="#facebook-feed" class="nav-link"><i class="fa-brands fa-facebook nav-icon"></i> Facebook Hub</a></li>
+            <li><a href="#press" class="nav-link"><i class="fa-solid fa-newspaper nav-icon"></i> Press & Speeches</a></li>
+            <li><a href="#connect" class="nav-link"><i class="fa-solid fa-handshake nav-icon"></i> Constituency Connect</a></li>
+            
+            <!-- Mobile Drawer Special Action Buttons -->
+            <li class="mobile-drawer-actions">
+              <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="btn-drawer-fb">
+                <i class="fa-brands fa-facebook-f"></i> Facebook Page @SukhpalKhairaINC
+              </a>
+              <button class="btn-drawer-admin btn-admin-nav" aria-label="Admin Login Portal">
+                <i class="fa-solid fa-lock"></i> Admin Login Portal
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Direct Facebook Page Link -->
+          <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="btn-fb-nav" title="Visit Official Facebook Page">
+            <i class="fa-brands fa-facebook-f"></i> <span class="fb-btn-text">Facebook</span>
+          </a>
+
+          <!-- Bilingual Switcher (EN | PA) -->
+          <button id="langSwitchBtn" class="lang-switch-btn" aria-label="Switch Language" title="Switch Language">
+            🌐 <span class="lang-text">ਪੰਜਾਬੀ</span>
+          </button>
+
+          <!-- Theme Toggle (Light / Dark) -->
+          <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+            🌙 <span class="theme-text">Dark</span>
+          </button>
+
+          <!-- Admin Login Button -->
+          <button class="btn-admin-nav" aria-label="Admin Login" title="Admin Login Portal">
+            <i class="fa-solid fa-lock"></i> <span class="admin-btn-text">Admin</span>
+          </button>
+
+          <!-- Mobile Drawer Toggle -->
+          <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Open Mobile Menu" title="Toggle Navigation Menu">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <i class="fa-solid fa-flag"></i> <span data-i18n="heroBadge">MISSION 2027 • PUNJAB • CONGRESS PARTY</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="heroTitle">Sardar Sukhpal Singh Khaira</span>
+            <br>
+            <span class="highlight-saffron">Voice of Punjab</span>
+          </h1>
+
+          <div class="hero-subtitle-slogan" data-i18n="heroSlogan">
+            “ਲੋਕਾਂ ਲਈ, ਲੋਕਾਂ ਨਾਲ ਹਮੇਸ਼ਾ — ਇੱਕ ਸੱਚਾ ਪੰਜਾਬ | ਇੱਕ ਨਵੀਂ ਉਮੀਦ”
+          </div>
+
+          <p class="hero-description" data-i18n="heroDesc">
+            Member of the Punjab Legislative Assembly representing Bholath constituency. Dedicated to fighting for agricultural rights, youth employment, transparent governance, and social justice.
+          </p>
+
+          <!-- CTA Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="btn-fb-hero">
+              <i class="fa-brands fa-facebook-f"></i> <span data-i18n="btnFacebook">Follow Official Facebook Page</span>
+            </a>
+
+            <a href="#connect" class="btn-primary-saffron">
+              <i class="fa-solid fa-users"></i> <span data-i18n="btnJoin">Join Mission 2027</span>
+            </a>
+
+            <a href="#connect" class="btn-secondary-outline">
+              <i class="fa-solid fa-file-pen"></i> <span data-i18n="btnGrievance">Citizen Grievance</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Bar -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">15+ Years</span>
+              <span class="stat-label" data-i18n="statService">Public & Legislative Service</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Bholath</span>
+              <span class="stat-label" data-i18n="statConstituency">Assembly Constituency</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100K+</span>
+              <span class="stat-label" data-i18n="statSupporters">Facebook Supporters</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Banner Card Showcase -->
+        <div class="hero-visual-card">
+          <img src="/banner.jpeg" alt="Sukhpal Singh Khaira Mission 2027 Official Banner" class="hero-banner-img">
+          <div class="hero-badge-overlay">
+            <div class="overlay-info">
+              <h4>ਮਿਸ਼ਨ 2027 — ਇੱਕ ਸੱਚਾ ਪੰਜਾਬ</h4>
+              <p>ਤਰੱਕੀ • ਸਮਾਨਤਾ • ਰੋਜ਼ਗਾਰ • ਮਜ਼ਬੂਤ ਪੰਜਾਬ</p>
+            </div>
+            <div class="overlay-icon-stamp">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION 2027 CORE PILLARS SECTION -->
+    <section id="pillars" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow" data-i18n="pillarsEyebrow">VISION FOR PUNJAB</span>
+          <h2 class="section-title" data-i18n="pillarsTitle">Four Core Pillars of Mission 2027</h2>
+          <p class="section-subtitle" data-i18n="pillarsSubtitle">
+            Our commitment to rebuilding a prosperous, peaceful, and self-reliant Punjab under the leadership of Sukhpal Singh Khaira.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar1Title">Farmers & Agriculture</h3>
+            <p class="pillar-desc" data-i18n="pillar1Desc">
+              Ensuring guaranteed MSP, agrarian debt relief, crop diversification support, groundwater preservation, and dignity for farm workers.
+            </p>
+            <ul class="pillar-list">
+              <li><i class="fa-solid fa-circle-check"></i> Fair MSP for all major crops</li>
+              <li><i class="fa-solid fa-circle-check"></i> Water table revival plan</li>
+              <li><i class="fa-solid fa-circle-check"></i> Agricultural debt waiver</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar2Title">Youth & Employment</h3>
+            <p class="pillar-desc" data-i18n="pillar2Desc">
+              Establishing regional industrial hubs, skill development centers, stopping youth brain-drain migration, and promoting sports.
+            </p>
+            <ul class="pillar-list">
+              <li><i class="fa-solid fa-circle-check"></i> Local job creation hubs</li>
+              <li><i class="fa-solid fa-circle-check"></i> Modern IT & Skill Parks</li>
+              <li><i class="fa-solid fa-circle-check"></i> Sports infrastructure in villages</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar3Title">Transparent Governance</h3>
+            <p class="pillar-desc" data-i18n="pillar3Desc">
+              Eradicating administrative corruption, breaking drug cartel networks, enforcing rule of law, and ensuring public accountability.
+            </p>
+            <ul class="pillar-list">
+              <li><i class="fa-solid fa-circle-check"></i> Zero-tolerance for corruption</li>
+              <li><i class="fa-solid fa-circle-check"></i> Strict action against drug trade</li>
+              <li><i class="fa-solid fa-circle-check"></i> Public service guarantee act</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-user-nurse"></i>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar4Title">Education & Health</h3>
+            <p class="pillar-desc" data-i18n="pillar4Desc">
+              Upgrading government schools with digital infrastructure, building affordable super-specialty hospitals, and empowering women.
+            </p>
+            <ul class="pillar-list">
+              <li><i class="fa-solid fa-circle-check"></i> Smart government schools</li>
+              <li><i class="fa-solid fa-circle-check"></i> Affordable healthcare for all</li>
+              <li><i class="fa-solid fa-circle-check"></i> Women welfare schemes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SUKHPAL SINGH KHAIRA -->
+    <section id="about" class="section-padding about-section">
+      <div class="container about-grid">
+        <!-- Portrait Column -->
+        <div class="about-image-wrapper">
+          <div class="about-portrait-card">
+            <img src="/sukhpal-khaira.jpeg" alt="Sardar Sukhpal Singh Khaira Portrait" class="about-portrait-img">
+          </div>
+          <div class="about-badge-floating">
+            <h4>Sukhpal Singh Khaira</h4>
+            <p>Member of Legislative Assembly (MLA) Bholath, Punjab</p>
+          </div>
+        </div>
+
+        <!-- Biography Content Column -->
+        <div class="about-content-box">
+          <span class="section-eyebrow" data-i18n="aboutEyebrow">ABOUT THE LEADER</span>
+          <h2 class="about-title" data-i18n="aboutTitle">A Fearless Voice for Punjab</h2>
+          
+          <p class="about-lead-para" data-i18n="aboutLead">
+            Sukhpal Singh Khaira has consistently stood up for truth, transparency, and public welfare across Punjab.
+          </p>
+
+          <p class="about-body-para" data-i18n="aboutDesc">
+            As a senior political leader and MLA from Bholath, he has led pivotal legislative debates, raised issues of farmer distress, advocated for clean water and environment, and exposed administrative irregularities with unyielding courage.
+          </p>
+
+          <!-- Interactive Bio Tabs -->
+          <div class="tabs-container">
+            <div class="tab-buttons-row">
+              <button class="tab-btn bio-tab-btn active" data-target="tab-record">📜 Political Record</button>
+              <button class="tab-btn bio-tab-btn" data-target="tab-farmers">🌾 Farmer Champion</button>
+              <button class="tab-btn bio-tab-btn" data-target="tab-bholath">🏛️ Bholath Constituency</button>
+            </div>
+
+            <div id="tab-record" class="tab-pane bio-tab-pane active">
+              <ul class="tab-list-items">
+                <li><i class="fa-solid fa-check"></i> Elected MLA representing Bholath Assembly Constituency, Punjab</li>
+                <li><i class="fa-solid fa-check"></i> Former Leader of Opposition in the Punjab Legislative Assembly</li>
+                <li><i class="fa-solid fa-check"></i> Prominent leader in Indian National Congress (INC Punjab)</li>
+              </ul>
+            </div>
+
+            <div id="tab-farmers" class="tab-pane bio-tab-pane">
+              <ul class="tab-list-items">
+                <li><i class="fa-solid fa-check"></i> Active participant in national agrarian movements & MSP protections</li>
+                <li><i class="fa-solid fa-check"></i> Advocate for canal water access to every agricultural field in Punjab</li>
+                <li><i class="fa-solid fa-check"></i> Opponent of land acquisition exploitation and corporate dominance</li>
+              </ul>
+            </div>
+
+            <div id="tab-bholath" class="tab-pane bio-tab-pane">
+              <ul class="tab-list-items">
+                <li><i class="fa-solid fa-check"></i> Facilitated major rural road & bridge connectivity projects in Bholath</li>
+                <li><i class="fa-solid fa-check"></i> Upgraded civil health infrastructure and flood protection embankments</li>
+                <li><i class="fa-solid fa-check"></i> Accessible 24/7 public grievance listening office for residents</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="btn-fb-hero">
+            <i class="fa-brands fa-facebook-f"></i> Connect with Sukhpal Khaira on Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICIAL FACEBOOK & SOCIAL FEED HUB -->
+    <section id="facebook-feed" class="section-padding fb-hub-section">
+      <div class="container">
+        <!-- Facebook CTA Header Banner -->
+        <div class="fb-hero-banner-card">
+          <div class="fb-banner-text">
+            <h3 data-i18n="fbTitle">Connect on Official Facebook Page</h3>
+            <p data-i18n="fbDesc">
+              Stay updated with live news, public meetings, speeches, and official statements directly from Sukhpal Singh Khaira's Facebook page.
+            </p>
+          </div>
+          <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="btn-white-fb">
+            <i class="fa-brands fa-facebook-f"></i> <span data-i18n="btnVisitFb">Visit Facebook Page @SukhpalKhairaINC</span>
+          </a>
+        </div>
+
+        <!-- Facebook Grid Layout -->
+        <div class="fb-layout-grid">
+          <!-- Interactive Post Feed Cards -->
+          <div class="fb-cards-column">
+            <!-- Post Card 1 -->
+            <article class="fb-post-card">
+              <div class="fb-card-header">
+                <div class="fb-user-profile">
+                  <img src="/sukhpal-khaira.jpeg" alt="Sukhpal Singh Khaira Profile" class="fb-avatar">
+                  <div class="fb-user-info">
+                    <h5>Sukhpal Singh Khaira</h5>
+                    <span>Posted on Official Facebook • Public Updates</span>
+                  </div>
+                </div>
+                <i class="fa-brands fa-square-facebook fb-badge-icon"></i>
+              </div>
+              <p class="fb-post-text">
+                🚩 ਪੰਜਾਬ ਦੇ ਮਸਲਿਆਂ 'ਤੇ ਨਿਰੰਤਰ ਆਵਾਜ਼ ਬੁਲੰਦ ਕਰਦੇ ਰਹਾਂਗੇ। ਕਿਸਾਨਾਂ, ਨੌਜਵਾਨਾਂ ਅਤੇ ਆਮ ਲੋਕਾਂ ਦੇ ਹੱਕਾਂ ਲਈ ਸਾਡੀ ਲੜਾਈ ਜਾਰੀ ਹੈ। ਮਿਸ਼ਨ 2027 ਪੰਜਾਬ ਦੀ ਨਵੀਂ ਤਸਵੀਰ ਸਾਹਮਣੇ ਲਿਆਵੇਗਾ।
+              </p>
+              <div class="fb-post-media">
+                <img src="/banner.jpeg" alt="Sukhpal Khaira Public Meeting">
+              </div>
+              <div class="fb-card-footer">
+                <span>👍 1.8K Likes • 240 Shares</span>
+                <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener">View Full Post on Facebook →</a>
+              </div>
+            </article>
+
+            <!-- Post Card 2 -->
+            <article class="fb-post-card">
+              <div class="fb-card-header">
+                <div class="fb-user-profile">
+                  <img src="/sukhpal-khaira.jpeg" alt="Sukhpal Singh Khaira Profile" class="fb-avatar">
+                  <div class="fb-user-info">
+                    <h5>Sukhpal Singh Khaira</h5>
+                    <span>Photos & Constituency Work • Bholath</span>
+                  </div>
+                </div>
+                <i class="fa-brands fa-square-facebook fb-badge-icon"></i>
+              </div>
+              <p class="fb-post-text">
+                ਹਲਕਾ ਭੁਲੱਥ ਦੇ ਵੱਖ-ਵੱਖ ਪਿੰਡਾਂ ਵਿੱਚ ਲੋਕਾਂ ਨਾਲ ਮੁਲਾਕਾਤ ਕਰਕੇ ਉਨ੍ਹਾਂ ਦੀਆਂ ਸਮੱਸਿਆਵਾਂ ਸੁਣੀਆਂ ਅਤੇ ਮੌਕੇ 'ਤੇ ਹੀ ਹੱਲ ਲਈ ਸਬੰਧਤ ਅਧਿਕਾਰੀਆਂ ਨੂੰ ਨਿਰਦੇਸ਼ ਦਿੱਤੇ।
+              </p>
+              <div class="fb-card-footer">
+                <span>📷 View Photo Gallery</span>
+                <a href="https://www.facebook.com/SukhpalKhairaINC/photos" target="_blank" rel="noopener">Browse Photos on Facebook →</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Facebook Official Embedded Timeline Widget -->
+          <div class="fb-widget-box">
+            <div class="fb-card-title-bar">
+              <h4><i class="fa-brands fa-facebook" style="color:var(--fb-blue);margin-right:6px;"></i> Live Facebook Page Timeline</h4>
+              <span>Official Posts • @SukhpalKhairaINC</span>
+            </div>
+
+            <div class="fb-iframe-container">
+              <iframe 
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSukhpalKhairaINC&tabs=timeline&width=500&height=650&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" 
+                width="500" 
+                height="650" 
+                style="border:none;overflow:hidden;width:100%;max-width:500px;" 
+                scrolling="no" 
+                frameborder="0" 
+                allowfullscreen="true" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                title="Sukhpal Singh Khaira Official Facebook Timeline">
+              </iframe>
+            </div>
+
+            <div class="fb-widget-fallback">
+              <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="btn-open-fb-full">
+                <i class="fa-brands fa-facebook"></i> Visit Official Facebook Page @SukhpalKhairaINC →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SUPPORTER BADGE GENERATOR -->
+    <section class="section-padding badge-generator-section">
+      <div class="container">
+        <div class="badge-gen-card">
+          <!-- Left Controls -->
+          <div>
+            <span class="section-eyebrow" style="color:var(--gold-accent);" data-i18n="badgeGenTitle">DIGITAL SUPPORTER BADGE</span>
+            <h2 class="section-title" style="color:#ffffff;" data-i18n="badgeGenTitle">Create Your Supporter Badge</h2>
+            <p style="color:#cbd5e1;margin-bottom:28px;" data-i18n="badgeGenDesc">
+              Join thousands of supporters across Punjab. Generate your custom Mission 2027 supporter card and share it on Facebook!
+            </p>
+
+            <div class="input-group">
+              <label for="badgeNameInput" data-i18n="lblYourName" style="color:#ffffff;">Your Full Name:</label>
+              <input type="text" id="badgeNameInput" class="input-control" placeholder="e.g. Gurpreet Singh / Harpreet Kaur">
+            </div>
+
+            <div class="input-group">
+              <label for="badgeCityInput" data-i18n="lblYourCity" style="color:#ffffff;">Your Village / City:</label>
+              <input type="text" id="badgeCityInput" class="input-control" placeholder="e.g. Bholath, Kapurthala">
+            </div>
+
+            <button id="downloadBadgeBtn" class="btn-primary-saffron" style="width:100%;">
+              <i class="fa-solid fa-id-card"></i> <span data-i18n="btnDownloadBadge">Generate Supporter Card</span>
+            </button>
+          </div>
+
+          <!-- Right Badge Live Preview Card -->
+          <div>
+            <div class="badge-preview-box" id="badgePreviewContainer">
+              <img src="/congress-logo.png" alt="Congress Party Logo" class="badge-congress-logo">
+              <h3 class="badge-supporter-name" id="badgeNameDisplay">Your Name Here</h3>
+              <p class="badge-supporter-location" id="badgeCityDisplay">📍 Bholath / Punjab</p>
+              <div style="background:rgba(255,255,255,0.1);padding:10px;border-radius:10px;margin-bottom:12px;">
+                <strong style="color:var(--saffron-orange);">SUPPORTER • MISSION 2027</strong>
+              </div>
+              <p class="badge-leader-quote">“ਲੋਕਾਂ ਲਈ, ਲੋਕਾਂ ਨਾਲ ਹਮੇਸ਼ਾ — ਇੱਕ ਸੱਚਾ ਪੰਜਾਬ”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSTITUENCY CONNECT & PUBLIC FORM -->
+    <section id="connect" class="section-padding connect-section">
+      <div class="container connect-grid">
+        <!-- Left Info -->
+        <div class="connect-info-box">
+          <span class="section-eyebrow" data-i18n="connectTitle">CONSTITUENCY CONNECT</span>
+          <h2 class="section-title" data-i18n="connectTitle">Voice of Bholath & Punjab</h2>
+          <p class="section-subtitle" data-i18n="connectDesc">
+            Whether you want to submit a public grievance, share suggestions for development, or register as a volunteer for Mission 2027, our team is at your service.
+          </p>
+
+          <div class="contact-cards-stack">
+            <div class="contact-mini-card">
+              <div class="contact-icon-circle">
+                <i class="fa-solid fa-building-flag"></i>
+              </div>
+              <div class="contact-detail">
+                <h5>MLA Constituency Office</h5>
+                <p>Bholath, District Kapurthala, Punjab - 144622</p>
+              </div>
+            </div>
+
+            <div class="contact-mini-card">
+              <div class="contact-icon-circle">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="contact-detail">
+                <h5>Official Facebook Page</h5>
+                <p><a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" style="color:var(--fb-blue);font-weight:700;">facebook.com/SukhpalKhairaINC</a></p>
+              </div>
+            </div>
+
+            <div class="contact-mini-card">
+              <div class="contact-icon-circle">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-detail">
+                <h5>Official Email Contact</h5>
+                <p>sukhpalkhaira@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Interactive Form -->
+        <div class="form-card">
+          <!-- Form Toggle Tabs -->
+          <div class="form-toggle-tabs">
+            <button class="form-toggle-btn active" data-mode="volunteer" data-i18n="tabVolunteer">
+              🤝 Join Mission 2027
+            </button>
+            <button class="form-toggle-btn" data-mode="grievance" data-i18n="tabGrievance">
+              📩 Submit Grievance
+            </button>
+          </div>
+
+          <h3 id="formTitle" style="font-size:1.35rem;font-weight:800;margin-bottom:20px;">Join Mission 2027 Team</h3>
+
+          <form id="connectForm">
+            <input type="hidden" id="formModeInput" value="volunteer">
+
+            <div class="input-group">
+              <label for="formName">Full Name *</label>
+              <input type="text" id="formName" class="input-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-group">
+                <label for="formPhone">Mobile / WhatsApp No. *</label>
+                <input type="tel" id="formPhone" class="input-control" placeholder="10 digit mobile number" required>
+              </div>
+
+              <div class="input-group">
+                <label for="formCity">Village / City *</label>
+                <input type="text" id="formCity" class="input-control" placeholder="Your village/town" required>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="formAssembly">Constituency / Area</label>
+              <input type="text" id="formAssembly" class="input-control" placeholder="e.g. Bholath / Kapurthala / Other">
+            </div>
+
+            <div class="input-group">
+              <label for="formMessage">Message / Suggestions / Issue Details</label>
+              <textarea id="formMessage" class="input-control" rows="4" placeholder="Write your message or grievance here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-form">
+              <i class="fa-solid fa-paper-plane"></i> <span data-i18n="btnSubmit">Submit Information</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS & MEDIA SPEECHES GALLERY -->
+    <section id="press" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">NEWS & MEDIA</span>
+          <h2 class="section-title">Press Releases & Statements</h2>
+          <p class="section-subtitle">Read key assembly statements, press releases, and speeches by Sardar Sukhpal Singh Khaira.</p>
+        </div>
+
+        <div class="press-grid">
+          <!-- Article 1 -->
+          <article class="press-card">
+            <div class="press-media-header">
+              <img src="banner.jpeg" alt="Press Release Punjab Assembly">
+              <span class="press-tag-overlay">Assembly Speech</span>
+            </div>
+            <div class="press-body">
+              <span class="press-date">September 2026 • Punjab Vidhan Sabha</span>
+              <h3 class="press-headline">Strong Advocacy for Punjab's Agricultural Sector & MSP Guarantee</h3>
+              <p class="press-snippet">
+                Raising critical issues regarding crop damage compensation, canal water distribution, and agricultural debt relief in the Legislative Assembly.
+              </p>
+              <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="press-read-more">
+                Read Statement on Facebook <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="press-card">
+            <div class="press-media-header">
+              <img src="sukhpal-khaira.jpeg" alt="Press Conference">
+              <span class="press-tag-overlay">Press Conference</span>
+            </div>
+            <div class="press-body">
+              <span class="press-date">August 2026 • Chandigarh Press Club</span>
+              <h3 class="press-headline">Demanding Action Against Drug Trafficking & Administrative Irregularities</h3>
+              <p class="press-snippet">
+                Addressing press conference in Chandigarh to expose administrative lapses and demanding stern action against drug cartels affecting Punjab youth.
+              </p>
+              <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="press-read-more">
+                Watch Press Briefing <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="press-card">
+            <div class="press-media-header">
+              <img src="banner.jpeg" alt="Mission 2027 Rally">
+              <span class="press-tag-overlay">Mission 2027 Rally</span>
+            </div>
+            <div class="press-body">
+              <span class="press-date">July 2026 • Bholath Public Gathering</span>
+              <h3 class="press-headline">Massive Public Support for Mission 2027 Launch in Bholath</h3>
+              <p class="press-snippet">
+                Thousands of citizens gather to pledge support for clean governance, youth empowerment, and a prosperous Punjab.
+              </p>
+              <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="press-read-more">
+                View Rally Media <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1 Brand -->
+          <div class="footer-col-brand">
+            <h3>Sukhpal Singh Khaira</h3>
+            <p>
+              Member of the Punjab Legislative Assembly (MLA - Bholath). Voice of Punjab, Indian National Congress.
+            </p>
+            <div class="footer-social-row">
+              <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="mailto:sukhpalkhaira@gmail.com" class="social-icon-btn" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2 Quick Links -->
+          <div>
+            <h4 class="footer-col-title">Quick Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Leader</a></li>
+              <li><a href="#pillars">Mission 2027 Pillars</a></li>
+              <li><a href="#facebook-feed">Facebook Social Hub</a></li>
+              <li><a href="#press">Press Releases</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3 Focus Areas -->
+          <div>
+            <h4 class="footer-col-title">Focus Areas</h4>
+            <ul class="footer-links-list">
+              <li><a href="#pillars">Farmer Welfare & MSP</a></li>
+              <li><a href="#pillars">Youth Employment</a></li>
+              <li><a href="#pillars">Anti-Corruption Drive</a></li>
+              <li><a href="#pillars">Education & Healthcare</a></li>
+              <li><a href="#connect">Constituency Voice</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 Contact & Official Page -->
+          <div>
+            <h4 class="footer-col-title">Official Facebook Page</h4>
+            <p style="font-size:0.9rem;color:#cbd5e1;line-height:1.6;margin-bottom:14px;">
+              Follow official updates, live videos, and announcements directly on Facebook:
+            </p>
+            <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="btn-fb-hero" style="font-size:0.875rem;padding:12px 20px;">
+              <i class="fa-brands fa-facebook-f"></i> @SukhpalKhairaINC
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+          <span data-i18n="footerCopyright">© 2026 Office of Sardar Sukhpal Singh Khaira, MLA Bholath. All Rights Reserved.</span>
+          <div>
+            <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" style="color:var(--gold-accent)">
+              Facebook Page: SukhpalKhairaINC
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MOBILE BOTTOM APP DOCK -->
+    <div class="mobile-app-dock" aria-label="Mobile Navigation Bar">
+      <div class="dock-items-row">
+        <a href="#home" class="dock-item active">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="#about" class="dock-item">
+          <i class="fa-solid fa-user-shield"></i>
+          <span>About</span>
+        </a>
+        <a href="https://www.facebook.com/SukhpalKhairaINC" target="_blank" rel="noopener" class="dock-item dock-item-fb">
+          <i class="fa-brands fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="#connect" class="dock-item">
+          <i class="fa-solid fa-users"></i>
+          <span>Join</span>
+        </a>
+        <button class="dock-item btn-admin-nav dock-item-admin" style="background:none;border:none;cursor:pointer;">
+          <i class="fa-solid fa-lock"></i>
+          <span>Admin</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL DIALOG CONTAINER -->
+    <div id="modalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-content-card">
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <h3 id="modalTitle" style="font-size:1.5rem;font-weight:900;margin-bottom:16px;color:var(--text-main)">Notification</h3>
+        <div id="modalBody">
+          <!-- Dynamic content injected here -->
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- End #siteContent -->
+
+  <!-- JavaScript -->
+  <script src="/script.js"></script>
+</body>
+</html>

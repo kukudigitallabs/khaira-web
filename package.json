@@ -1,0 +1,32 @@
+{
+  "name": "sukhpal-khaira-website",
+  "version": "1.0.0",
+  "description": "Official Web Application & Admin Management System for Sardar Sukhpal Singh Khaira (MLA Bholath)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [
+    "Sukhpal Singh Khaira",
+    "MLA Bholath",
+    "Congress Punjab",
+    "Mission 2027",
+    "Express",
+    "MySQL",
+    "Docker"
+  ],
+  "author": "Antigravity AI",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7"
+  }
+}
